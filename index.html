@@ -3,65 +3,67 @@
 <head>
     <title>Video Demo</title>
     <style>
-        /* 视频容器样式 */
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* 让视频容器占据整个视窗高度，你也可以调整这个值 */
-        }
-
-        /* 视频标题样式 */
-        .video-title {
-            font-weight: bold;
+        /* 页面布局样式 */
+        .container {
             text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
         }
 
-        /* 大标题样式 */
+        /* 标题样式 */
         h1 {
-            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
         }
 
-        /* 调整视频大小，使其适合居中显示 */
+        /* 摘要样式 */
+        .summary {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* 图片样式 */
+        .image {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        /* 方法样式 */
+        .method {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* 视频样式 */
         video {
             max-width: 100%;
-            max-height: 100%;
-        }
-
-        /* 分隔线样式 */
-        .separator {
-            border-bottom: 1px solid #ccc;
-            margin: 30px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- 大标题 -->
-    <h1>这里是大标题</h1>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>标题</h1>
 
-    <!-- 视频1 -->
-    <div class="video-container">
+        <!-- 摘要 -->
+        <p class="summary">摘要内容</p>
+
+        <!-- 图片1 -->
+        <img class="image" src="image1.jpg" alt="图片1">
+
+        <!-- 图片2 -->
+        <img class="image" src="image2.jpg" alt="图片2">
+
+        <!-- 方法 -->
+        <p class="method">方法描述</p>
+
+        <!-- 视频 -->
         <video controls>
             <source src="2017_gen.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-
-    <!-- 视频1的标题 -->
-    <h2 class="video-title">视频1标题</h2>
-
-    <!-- 分隔线 -->
-    <div class="separator"></div>
-
-    <!-- 视频2 -->
-    <div class="video-container">
-        <video controls>
-            <source src="2017_gen.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- 视频2的标题 -->
-    <h2 class="video-title">视频2标题</h2>
 </body>
 </html>
